@@ -22,7 +22,7 @@ def testspeed(m):
     try:
         test = speedtest.Speedtest()
         test.get_best_server()
-        m = m.edit("تحميل السرعة... سورس بابلو")
+        m = m.edit("تحميل السرعة... سورس سـيـمـو")
         test.download()
         m = m.edit("تشغيل اختبار سرعة التحميل...")
         test.upload()
