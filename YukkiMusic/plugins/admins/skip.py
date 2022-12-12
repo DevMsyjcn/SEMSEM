@@ -35,7 +35,7 @@ SKIP_COMMAND = get_command("SKIP_COMMAND")
     & ~BANNED_USERS
 )
 @app.on_message(
-    command(["تخطي"])
+    command(["التالي","تخطي"])
     & filters.group
     & ~filters.edited
     & ~BANNED_USERS
