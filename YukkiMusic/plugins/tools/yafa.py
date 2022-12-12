@@ -175,11 +175,11 @@ async def ahmad(client: Client, message: Message):
         reply_markup=InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton(f"{YAFA_NAME} ›", url=f"{YAFA_CHANNEL}"),
+                InlineKeyboardButton(f"✅- اضغط لاضفتي لمجموعتك - ✅", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
                 ],[
-                InlineKeyboardButton(f"✅ -إضغط لاضافتيـﮯ لـجروبڪ- ✅ ", url=f"https://t.me/{BOT_USERNAME}?startchannel=true"),
+                InlineKeyboardButton(f"♡ إضـغـط لـتـنـصـيـب بـوتـڪ ♡", url=f"https://t.me/DEV_SAMIR"),
                 ],[
-                InlineKeyboardButton("•لـتـنـصـيـب بـوتـڪ•", url=f"https://t.me/DEV_SAMIR"),
+                InlineKeyboardButton("✅- اضغط لاضفتي لـقـنـاتـڪ - ✅", url=f"https://t.me/{BOT_USERNAME}?startchannel=true"),
                 ]
             ]
         ),
@@ -196,13 +196,13 @@ async def ahmad(client: Client, message: Message):
 async def ahmad(client: Client, message: Message):
     await message.reply_photo(
         photo=config.START_IMG_URL,
-        caption=f"""[ • 𝑊𝐸𝐿𝐶𝑂𝑀𝐸 𝑇𝑂 𝑇𝐻𝐸 𝑆𝑂𝑉𝑅𝐶𝐸 𝑀𝐴𝑋 • ](https://t.me/FTTUTY)
+        caption=f"""[ 𝑊𝐸𝐿𝐶𝑂𝑀𝐸 𝑇𝑂 𝑇𝐻𝐸 𝑆𝑂𝑉𝑅𝐶𝐸 𝑀𝐴𝑋  ](https://t.me/FTTUTY)
 
-[ • 𝑆𝑂𝑉𝑅𝐶𝐸 𝑂𝑁 𝑇𝐸𝐿𝐸𝐺𝑅𝐴𝑀 • ](https://t.me/FTTUTY) 
+[ 𝑆𝑂𝑉𝑅𝐶𝐸 𝑂𝑁 𝑇𝐸𝐿𝐸𝐺𝑅𝐴𝑀 ](https://t.me/FTTUTY) 
 
-[ • 𝐹𝐴𝑆𝑇 𝑆𝑂𝑉𝑅𝐶𝐸 𝐼𝑁 𝑇𝐸𝐿𝐸𝐺𝑅𝐴𝑀 • ](https://t.me/FTTUTY) 
+[  𝐹𝐴𝑆𝑇 𝑆𝑂𝑉𝑅𝐶𝐸 𝐼𝑁 𝑇𝐸𝐿𝐸𝐺𝑅𝐴𝑀 ](https://t.me/FTTUTY) 
 
-[ • 𝐷𝐸𝑊𝐸𝐿𝑂𝑃𝐸𝑅 𝑆𝑂𝑉𝑅𝐶𝐸 • ](https://t.me/FTTUTY)""",
+[  𝐷𝐸𝑊𝐸𝐿𝑂𝑃𝐸𝑅 𝑆𝑂𝑉𝑅𝐶𝐸 ](https://t.me/FTTUTY)""",
         reply_markup=InlineKeyboardMarkup(
         [
             [
@@ -212,9 +212,9 @@ async def ahmad(client: Client, message: Message):
                 ),
             ],
             [
-                InlineKeyboardButton("• اضفنـيـﮯ لمجموعتڪ •", url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
+                InlineKeyboardButton("•✅- اضغط لاضفتي لمجموعتك - ✅•", url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                 ),
-                InlineKeyboardButton("•لتنصيب بـوتڪ•", url=f"https://t.me/DEV_SAMIR",),
+               # InlineKeyboardButton("•لتنصيب بـوتڪ•", url=f"https://t.me/DEV_SAMIR",),
                 ]
             ]
         ),
