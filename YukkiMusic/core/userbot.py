@@ -57,15 +57,15 @@ class Userbot(Client):
         if config.STRING1:
             await self.one.start()
             try:
-                await self.one.join_chat("SEMO1C")
-                await self.one.join_chat("SEMO8L")
-                await self.one.join_chat("SEMO8L")
+                await self.one.join_chat("FTTUTY")
+                await self.one.join_chat("FTTUTY")
+                await self.one.join_chat("FTTUTY")
             except:
                 pass
             assistants.append(1)
             try:
                 await self.one.send_message(
-                    config.LOG_GROUP_ID, "تـم تـنـصـيـب الـمـسـاعـد ؏ سـورس سـيـمـو"
+                    config.LOG_GROUP_ID, "✅ - تـم تـنـصـيـب الـمـسـاعـد ؏ سـورس سـيـمـو - ✅"
                 )
             except:
                 LOGGER(__name__).error(
@@ -88,15 +88,15 @@ class Userbot(Client):
         if config.STRING2:
             await self.two.start()
             try:
-                await self.two.join_chat("SEMO1C")
-                await self.two.join_chat("SEMO8L")
-                await self.two.join_chat("SEMO8L")
+                await self.two.join_chat("FTTUTY")
+                await self.two.join_chat("FTTUTY")
+                await self.two.join_chat("FTTUTY")
             except:
                 pass
             assistants.append(2)
             try:
                 await self.two.send_message(
-                    config.LOG_GROUP_ID, "تـم تـنـصـيـب الـمـسـاعـد ؏ سـورس سـيـمـو"
+                    config.LOG_GROUP_ID, "✅ - تـم تـنـصـيـب الـمـسـاعـد ؏ سـورس سـيـمـو - ✅"
                 )
             except:
                 LOGGER(__name__).error(
@@ -119,15 +119,15 @@ class Userbot(Client):
         if config.STRING3:
             await self.three.start()
             try:
-                await self.three.join_chat("SEMO1C")
-                await self.three.join_chat("SEMO8L")
-                await self.three.join_chat("SEMO8L")
+                await self.three.join_chat("FTTUTY")
+                await self.three.join_chat("FTTUTY")
+                await self.three.join_chat("FTTUTY")
             except:
                 pass
             assistants.append(3)
             try:
                 await self.three.send_message(
-                    config.LOG_GROUP_ID, "تـم تـنـصـيـب الـمـسـاعـد ؏ سـورس سـيـمـو"
+                    config.LOG_GROUP_ID, "✅ - تـم تـنـصـيـب الـمـسـاعـد ؏ سـورس سـيـمـو - ✅"
                 )
             except:
                 LOGGER(__name__).error(
@@ -150,15 +150,15 @@ class Userbot(Client):
         if config.STRING4:
             await self.four.start()
             try:
-                await self.four.join_chat("SEMO1C")
-                await self.four.join_chat("SEMO8L")
-                await self.four.join_chat("SEMO8L")
+                await self.four.join_chat("FTTUTY")
+                await self.four.join_chat("FTTUTY")
+                await self.four.join_chat("FTTUTY")
             except:
                 pass
             assistants.append(4)
             try:
                 await self.four.send_message(
-                    config.LOG_GROUP_ID, "تـم تـنـصـيـب الـمـسـاعـد ؏ سـورس سـيـمـو"
+                    config.LOG_GROUP_ID, "✅ - تـم تـنـصـيـب الـمـسـاعـد ؏ سـورس سـيـمـو - ✅"
                 )
             except:
                 LOGGER(__name__).error(
@@ -181,15 +181,15 @@ class Userbot(Client):
         if config.STRING5:
             await self.five.start()
             try:
-                await self.five.join_chat("SEMO1C")
-                await self.five.join_chat("SEMO8L")
-                await self.five.join_chat("SEMO8L")
+                await self.five.join_chat("FTTUTY")
+                await self.five.join_chat("FTTUTY")
+                await self.five.join_chat("FTTUTY")
             except:
                 pass
             assistants.append(5)
             try:
                 await self.five.send_message(
-                    config.LOG_GROUP_ID, "تـم تـنـصـيـب الـمـسـاعـد ؏ سـورس سـيـمـو ✅"
+                    config.LOG_GROUP_ID, "✅ - تـم تـنـصـيـب الـمـسـاعـد ؏ سـورس سـيـمـو - ✅"
                 )
             except:
                 LOGGER(__name__).error(
