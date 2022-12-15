@@ -171,7 +171,9 @@ async def ahmad(client: Client, message: Message):
 
 ⌔︙اضف البوت الى قناتك ثم أرسل 👇:
 
-⌔︙قناة أو تشغيل او قناه + أسم الاغنية التي تريدها""",
+⌔︙قناة أو تشغيل او قناه + أسم الاغنية التي تريدها
+
+━━━⊶⛧•[𝚂𝙾𝚄𝚁𝙲𝙴 𝚂𝙴𝙼𝙾](https://t.me/FTTUTY)•⛧⊷━━""",
         reply_markup=InlineKeyboardMarkup(
         [
             [
@@ -196,13 +198,15 @@ async def ahmad(client: Client, message: Message):
 async def ahmad(client: Client, message: Message):
     await message.reply_photo(
         photo=config.START_IMG_URL,
-        caption=f"""[ 𝑊𝐸𝐿𝐶𝑂𝑀𝐸 𝑇𝑂 𝑇𝐻𝐸 𝑆𝑂𝑉𝑅𝐶𝐸 𝑀𝐴𝑋  ](https://t.me/FTTUTY)
+        caption=f"""• مـرحـبـا بـڪ فـي سـورس سيمو 🔻
 
-[ 𝑆𝑂𝑉𝑅𝐶𝐸 𝑂𝑁 𝑇𝐸𝐿𝐸𝐺𝑅𝐴𝑀 ](https://t.me/FTTUTY) 
+[• قناة السورس 🎖](https://t.me/FTTUTY)
 
-[  𝐹𝐴𝑆𝑇 𝑆𝑂𝑉𝑅𝐶𝐸 𝐼𝑁 𝑇𝐸𝐿𝐸𝐺𝑅𝐴𝑀 ](https://t.me/FTTUTY) 
+[• مـبـرمـجہ آلـسـورس 🎖](https://t.me/DEV_SAMIR)
 
-[  𝐷𝐸𝑊𝐸𝐿𝑂𝑃𝐸𝑅 𝑆𝑂𝑉𝑅𝐶𝐸 ](https://t.me/FTTUTY)""",
+[• لـتـنـصـيـب بـوتـڪ 🎖](https://t.me/DEV_SAMIR)
+
+[• جـروب الدعـم 🎖](https://t.me/T_S_T99)""",
         reply_markup=InlineKeyboardMarkup(
         [
             [
