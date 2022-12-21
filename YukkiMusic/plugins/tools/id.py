@@ -26,7 +26,7 @@ def get_id(msg: Message):
                 return obj
 
 
-@app.on_message(command(["ايدي","ا","الايدي"]))
+@app.on_message(command(["كشف","/id","id","ايدي","ا","الايدي"]))
 async def showid(_, message: Message):
     chat_type = message.chat.type
 
