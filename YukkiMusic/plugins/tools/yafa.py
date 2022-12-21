@@ -221,9 +221,9 @@ async def ahmad(client: Client, message: Message):
         reply_markup=InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("♕ 𝐃𝐄𝐕 𝐒𝐄𝐌𝐎 ♕", url=f"{SUDO_USER}",
+                InlineKeyboardButton(" 𝐒 𝐀 𝐌 𝐈 𝐑 ", url=f"{SUDO_USER}",
                 ),
-                InlineKeyboardButton(f"♕ 𝐒 𝐎 𝐔 𝐑 𝐂 𝐄 ♕", url=f"{YAFA_CHANNEL}",
+                InlineKeyboardButton(f" 𝐒 𝐎 𝐔 𝐑 𝐂 𝐄 ", url=f"{YAFA_CHANNEL}",
                 ),
             ],
             [
