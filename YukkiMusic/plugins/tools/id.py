@@ -26,7 +26,7 @@ def get_id(msg: Message):
                 return obj
 
 
-@app.on_message(command(["ايدي"]))
+@app.on_message(command(["ايدي","ا","الايدي"]))
 async def showid(_, message: Message):
     chat_type = message.chat.type
 
@@ -36,7 +36,7 @@ async def showid(_, message: Message):
 
     elif chat_type in ["group", "supergroup"]:
         _id = ""
-        _id += "<b>آيدي الدردشة</b>: " f"<code>{message.chat.id}</code>\n"
+        _id += "<b>آيدي الجروب</b>: " f"<code>{message.chat.id}</code>\n"
         if message.reply_to_message:
             _id += (
                 "<b>تم الرد على معرف المستخدم</b>: "
