@@ -1,12 +1,11 @@
-# Dev : https://t me/DEV_SAMIR
-#@BA_BLOO
+# Dev : https://t me/YY8GG
+#Group : https://t.me/YaFaGr
 import requests
 from strings.filters import command
 from gpytranslate import Translator
 from aiohttp import ClientSession
 from pyrogram import filters, Client
 import re
-import config
 from config import (YAFA_NAME, YAFA_CHANNEL, SUDO_USER,
                     START_IMG_URL, BOT_USERNAME)
 from pyrogram.types import (InlineKeyboardButton,
@@ -16,7 +15,7 @@ from traceback import format_exc
 from YukkiMusic import app
 from typing import Union
 
-@app.on_message(command(["ترجمه","/tr"]))
+@app.on_message(command(["ترجمة","/tr"]))
 async def tr(_, message):
     trl = Translator()
     if message.reply_to_message and (message.reply_to_message.text or message.reply_to_message.caption):
@@ -69,7 +68,7 @@ async def paste(content: str):
     return BASE + resp["message"]
 
 
-@app.on_message(command(["طبعاعه","/pr"]))
+@app.on_message(command(["طباعة","/pr"]))
 async def paste_func(_, message: Message):
     if not message.reply_to_message:
         return await message.reply_text("الرد على رسالة ب  `/pr`")
@@ -121,10 +120,20 @@ async def telegraph(client, message):
         await message.reply(f"**الرابط »**\n`https://telegra.ph{response[0]}`",disable_web_page_preview=True,reply_markup=button_s)
     finally:
         os.remove(download_location)
+
+
+@app.on_message(command(["الرابط","/link"]) & ~filters.bot & ~filters.private)
+async def invitelink(client, message):
+    chid = message.chat.id
+    try:
+        invitelink = await client.export_chat_invite_link(chid)
+    except:
+        return await message.reply_text("قم برفعي مسؤول في المجموعة أولا ؟")
+    await message.reply_text(f"**تم إنشاء رابط الدعوة بنجاح :**\n {invitelink}")
+
     
 @app.on_message(command(["قول"])
     & filters.group
-    & ~filters.channel
     & ~filters.edited
 )
 def echo(client, msg):
@@ -136,22 +145,20 @@ def echo(client, msg):
     & filters.group
     & ~filters.edited
 )
-@app.on_message(command(["الاوامر"])
-    & filters.channel
-    & ~filters.edited
-)
-async def ahmad(client: Client, message: Message): 
-  await message.reply_photo(
-    photo=config.START_IMG_URL,
-    caption=f"""• أهلا عزيزي اليك اوامر بوت الميوزك •
+async def khalid(client: Client, message: Message):
+    usr = await client.get_users(message.from_user.id)
+    name = usr.first_name
+    async for photo in client.iter_profile_photos(message.from_user.id, limit=1):
+                    await message.reply_text( 
+                    f"""• أهلا عزيزي اليك اوامر بوت الميوزك •
 
-⌔︙تشغيل او شغل: لبدء تشغيل الاغاني
+⌔︙تشغيل : لبدء تشغيل الاغاني
 
 ⌔︙بنك : لقياس سرعة النت في البوت
 
-⌔︙أوامر القناة : تشغيل + أسم الأغنية 
+⌔︙أوامر القناة : قناه + أسم الأغنية 
 
-⌔︙كتم : لكتم الأغنية الحالية
+⌔︙كتم أو اسكت : لكتم الأغنية الحالية
 
 ⌔︙كمل : لألغاء كتم الأغنبة الحالية
 
@@ -159,7 +166,7 @@ async def ahmad(client: Client, message: Message):
 
 ⌔︙أمر التحميل : تحميل + اسم الاغنية 
 
-⌔︙انهاء او اسكت : لايقاف تشغيل الأغنية الحالية
+⌔︙انهاء : لايقاف تشغيل الأغنية الحالية
 
 ⌔︙طباعة : بالرد على نص لطباعته
 
@@ -171,54 +178,50 @@ async def ahmad(client: Client, message: Message):
 
 ⌔︙اضف البوت الى قناتك ثم أرسل 👇:
 
-⌔︙قناة أو تشغيل او قناه + أسم الاغنية التي تريدها
+⌔︙قناة أو قناه + أسم الاغنية التي تريدها
 
-━━━⊶⛧•[𝚂𝙾𝚄𝚁𝙲𝙴 𝚂𝙴𝙼𝙾](https://t.me/FTTUTY)•⛧⊷━━""",
+🪬 لـتـنـصـيـب بـوتـڪ : [إضغط هنا](https://t.me/DEV_SAMIR)""",
         reply_markup=InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton(f"✅- اضغط لاضفتي لمجموعتك - ✅", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
+                InlineKeyboardButton(f"• {YAFA_NAME} •", url=f"{YAFA_CHANNEL}"),
                 ],[
-                InlineKeyboardButton(f"♡ إضـغـط لـتـنـصـيـب بـوتـڪ ♡", url=f"https://t.me/DEV_SAMIR"),
-                ],[
-                InlineKeyboardButton("✅- اضغط لاضفتي لـقـنـاتـڪ - ✅", url=f"https://t.me/{BOT_USERNAME}?startchannel=true"),
+                InlineKeyboardButton("✅- اضغط لاضفتي لمجموعتك - ✅", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
                 ]
             ]
         ),
     )
     
-@app.on_message(command(["سورس","مصنع","مبرمج السورس","السورس","المطور","المبرمج"])
+@app.on_message(command(["المصنع","سمير","مصنع","سورس","السورس","مبرمج السورس","المطور","المبرمج"])
     & filters.group
     & ~filters.edited
 )
-@app.on_message(command(["سورس","مصنع","مبرمج السورس","مطور السورس","السورس","المطور","المبرمج"])
-    & filters.channel
-    & ~filters.edited
-)
-async def ahmad(client: Client, message: Message):
+async def khalid(client: Client, message: Message):
     await message.reply_photo(
-        photo=config.START_IMG_URL,
+        photo=f"{START_IMG_URL}",
         caption=f"""• مـرحـبـا بـڪ فـي سـورس سيمو 🔻
+
 
 [• قناة السورس 🎖](https://t.me/FTTUTY)
 
+
 [• مـبـرمـجہ آلـسـورس 🎖](https://t.me/DEV_SAMIR)
 
+
 [• لـتـنـصـيـب بـوتـڪ 🎖](https://t.me/DEV_SAMIR)
+
 
 [• جـروب الدعـم 🎖](https://t.me/T_S_T99)""",
         reply_markup=InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("• مبرمجہ السورس •", url=f"{SUDO_USER}",
+                InlineKeyboardButton("♕ 𝐃𝐄𝐕 𝐒 𝐄 𝐌 𝐎 ♕", url=f"{SUDO_USER}",
                 ),
-                InlineKeyboardButton(f"• قناة الـسورس •", url=f"{YAFA_CHANNEL}",
+                InlineKeyboardButton(f"♕ 𝐒 𝐎 𝐔 𝐑 𝐂 𝐄 ♕", url=f"{YAFA_CHANNEL}",
                 ),
             ],
             [
-                InlineKeyboardButton("•✅- اضغط لاضفتي لمجموعتك - ✅•", url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
-                ),
-               # InlineKeyboardButton("•لتنصيب بـوتڪ•", url=f"https://t.me/DEV_SAMIR",),
+                InlineKeyboardButton("✅- اضغط لاضفتي لمجموعتك - ✅", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
                 ]
             ]
         ),
