@@ -74,7 +74,7 @@ SUDO_USER = getenv(
     "SUDO_USER", "https://t.me/DEV_SAMIR"
 )  # رابط حسابك
 YAFA_NAME = getenv(
-    "YAFA_NAME", " ☾︎  𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐌𝐎  ☽︎ "
+    "YAFA_NAME", " ✰︎ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐌𝐎 ✰︎ "
 )  # اسم قناتك
 YAFA_CHANNEL = getenv(
    " YAFA_CHANNEL", "https://t.me/FTTUTY"
