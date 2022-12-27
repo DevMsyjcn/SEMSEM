@@ -190,9 +190,9 @@ async def ahmad(client: Client, message: Message):
             [
                 InlineKeyboardButton(f"{YAFA_NAME} ›", url=f"{YAFA_CHANNEL}"),
                 ],[
-                InlineKeyboardButton(f"• إضـغـط لاضـافـتـيـﮯ لـقـنـاتـڪ ✅ •", url=f"https://t.me/{BOT_USERNAME}?startchannel=true"),
+                InlineKeyboardButton(f"•✅ أضـغـط البوت لـقـنـاتـڪ ✅ •", url=f"https://t.me/{BOT_USERNAME}?startchannel=true"),
                 ],[
-                InlineKeyboardButton("• إضـغـط لاضـافـتـيـﮯ لـمـجـمـوعـتـڪ ✅ •", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
+                InlineKeyboardButton("•✅ أضـفـط البوت لـمـجـمـوعـتـڪ ✅•", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
                 ]
             ]
         ),
@@ -209,15 +209,22 @@ async def ahmad(client: Client, message: Message):
 async def ahmad(client: Client, message: Message):
     await message.reply_photo(
         photo=config.START_IMG_URL,
-        caption=f"""• مـرحـبـا بـڪ فـي سـورس سيمو 🔻
+        caption=f"""╭────── • ◈ • ──────╮
 
-[• قناة السورس 🎖](https://t.me/FTTUTY)
 
-[• مـبـرمـجہ آلـسـورس 🎖](https://t.me/DEV_SAMIR)
+✫︎ [𝚂𝙾𝚄𝚁𝙲𝙴 𝚂𝙴𝙼𝙾](https://t.me/FTTUTY)
 
-[• لـتـنـصـيـب بـوتـڪ 🎖](https://t.me/DEV_SAMIR)
 
-[• جـروب الدعـم 🎖](https://t.me/T_S_T99)""",
+✫︎ [𝚃𝙴𝙰𝙼 𝚂𝙴𝙼𝙾](https://t.me/T_S_T99)
+
+
+✫︎ [𝙳𝙴𝚅 𝚂𝙴𝙼𝙾](https://t.me/DEV_SAMIR)
+
+
+✫︎ [𝙵𝙰𝚂𝚃 𝚂𝙾𝚄𝚁𝙲𝙴 𝙸𝙽 𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙼](https://t.me/FTTUTT) 
+
+
+╰────── • ◈ • ──────╯""",
         reply_markup=InlineKeyboardMarkup(
         [
             [
@@ -227,7 +234,7 @@ async def ahmad(client: Client, message: Message):
                 ),
             ],
             [
-                InlineKeyboardButton("✅- اضغط لاضفتي لمجموعتك - ✅", url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
+                InlineKeyboardButton("✅- أضفط البوت لمجموعتك - ✅", url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                 ),
                 #InlineKeyboardButton("•لتنصيب بـوتڪ•", url=f"https://t.me/DEV_SAMIR",),
                 ]
