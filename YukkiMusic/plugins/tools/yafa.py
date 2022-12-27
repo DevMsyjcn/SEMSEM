@@ -123,7 +123,7 @@ async def telegraph(client, message):
         os.remove(download_location)
 
  
-@app.on_message(command(["رابط","الرابط","/link"]) & ~filters.bot & ~filters.private)
+@app.on_message(command(["لينك","رابط","الرابط","/link"]) & ~filters.bot & ~filters.private)
 async def invitelink(client, message):
     chid = message.chat.id
     try:
